@@ -21,7 +21,7 @@ with st.sidebar:
         selected_positions = [3, "?", "?", "?", "?", 3]
     st.title("Select frets to explore chords")
     st.markdown("_( **'?'** allows any, **'x'** is muted/unplayed string)_")
-    radio_options = ("?", "x", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+    radio_options = ("?", "x", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14)
 
     columns = st.columns(6)
     radio_labels = ("E|", "A|", "D|", "G|", "B|", "E|")

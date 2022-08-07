@@ -2,14 +2,17 @@
 
 This application launches a Streamlit dashboard to explore a guitar chord database by selecting fingerings based on fret locations.
 
-_hosted by Streamlit.io at_  
+_hosted by Streamlit.io at_<br>
 https://jrbarhydt-guitarfingering-guitarfingering-zljmbo.streamlitapp.com/
 
 
 ---
 
 ## Data Source:
-https://archive.ics.uci.edu/ml/datasets/Guitar+Chords+finger+positions
+
+chord-fingers.csv from:<br>
+https://archive.ics.uci.edu/ml/datasets/Guitar+Chords+finger+positions <br/>
+original data source:<br>
 https://wwww.fachords.com/guitar-chord/
 
 ---

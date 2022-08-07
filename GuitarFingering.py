@@ -114,7 +114,12 @@ with st.sidebar:
                                                   index=fret_to_key(selected_positions[col_no]))
     # convert selected positions for dataframe
     selected_positions = [element if element != "?" else None for element in selected_positions]
-
+    # link to other pages
+    st.markdown("---")
+    st.markdown("**More Dashboards:**")
+    st.markdown("- [Guitar Chord Explorer](https://jrbarhydt-guitarfingering-guitarfingering-zljmbo.streamlitapp.com/)")
+    st.markdown("- [Raisin Types Explorer](https://jrbarhydt-raisinexplorer-raisins-c3z4pe.streamlitapp.com/)")
+    st.markdown("- [I-94 Traffic Explorer](https://jrbarhydt-i94-traffic-traffic-sespds.streamlitapp.com/)")
 
 # create dataframe query based on radio selection
 query_terms = []
@@ -158,24 +163,4 @@ fig = go.Figure(
 fig.update_layout(height=1000, margin=dict(l=0, r=0, t=0, b=0))
 st.plotly_chart(fig, use_container_width=True)
 
-# link to other pages
-footer = """<style>
-               .footer {
-               position: fixed;
-               left: 0;
-               bottom: 0;
-               width: 100%;
-               background-color: #262730;
-               color: white;
-               text-align: center;
-               }
-            </style>
-            <div class="footer">
-               <a href="https://jrbarhydt-guitarfingering-guitarfingering-zljmbo.streamlitapp.com/">Guitar Chord Explorer</a>
-               &nbsp;&nbsp;&nbsp;
-               <a href="https://jrbarhydt-raisinexplorer-raisins-c3z4pe.streamlitapp.com/">Raisin Explorer</a>
-               &nbsp;&nbsp;&nbsp;
-               <a href="https://jrbarhydt-i94-traffic-traffic-sespds.streamlitapp.com/">I-94 Traffic Explorer</a>
-            </div>
-        """
-st.markdown(footer, unsafe_allow_html=True)
+
